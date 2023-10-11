@@ -1,0 +1,72 @@
+.registration{
+    height: 100vh;
+    width: 100%;
+    background: rgb(129, 178, 241);
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+    &__title{
+        margin: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+    }
+
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    
+        background-color: #ffff;
+        border-radius: 25px;
+        padding: 20px;
+        width: 100%;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+
+        &_item{
+            position: relative;
+            margin: 5px 0;
+            width: 100%;
+            & label{
+                position: absolute;
+                top: 18px;
+                left: 10px;
+                color: rgb(34, 31, 31);
+                text-transform: capitalize;
+                font-size: 13px;
+                transition: top .3s;
+                padding: 0 5px;
+                pointer-events: none;
+            }
+            & input{
+                width: 100%;
+                height: 50px;
+                background-color: #ffff;
+                border: 1px solid rgb(179, 162, 162);
+                border-radius: 15px;
+                padding: 5px 15px;
+                color: rgb(87, 83, 83);
+                outline: none;
+                text-decoration: none;
+                &:focus ~ label{
+                    top: -7px;
+                    background-color: #ffff;
+                    color: rgb(47, 31, 119);
+                }
+                &:valid ~ label{
+                    top: -7px;
+                    background-color: #ffff;
+                    color: rgb(47, 31, 119);
+                }
+            }
+        }
+        button {
+            height: 50px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
