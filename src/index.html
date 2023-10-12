@@ -22,15 +22,15 @@
 
                     <div class="registration__form_item">
                         <input id='input' class= '_req'  type="text" name="user_name" required autocomplete="none">
-                        <label for="">Name</label>
+                        <label for="">Imię</label>
                     </div>
                     <div class="registration__form_item">
                         <input id='input' class='_req'  type="text" name="user_surname" required autocomplete="none">
-                        <label for="">Surname</label>
+                        <label for="">Nazwisko</label>
                     </div>
                     <div class="registration__form_item">
-                        <input id='input' class='_req _email' type="text" name="user_email" required autocomplete="none">
-                        <label for="">Email</label>
+                        <input id='input' class='_req email' type="text" name="user_email" required autocomplete="none">
+                        <label for="">E-mail</label>
                     </div>
 
                     <button type="submit" class="button button-anim">Wyślij</button>
@@ -40,6 +40,17 @@
             </div>
         </section>
 
+        <div class="validation-alert">
+            <div class="validation-alert__content">
+                <p>
+                    Error!<br>
+                    Please fill in the form correctly.
+                </p>
+            </div>
+        </div>
+
     </body>
+
+    <script type="module" src="./js/main.js"></script>
 
 </html>

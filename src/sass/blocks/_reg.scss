@@ -1,16 +1,15 @@
 .registration{
     height: 100vh;
     width: 100%;
-    background: rgb(129, 178, 241);
-
+    background: linear-gradient(45deg, #b46dfe,#8979ec,#6c7dd2);
     display: flex;
     justify-content: center;
     align-items:center;
     text-align: center;
 
     &__title{
-        margin: 20px;
-        color: rgb(0, 0, 0);
+        margin: 30px;
+        color: rgb(255, 255, 255);
         font-size: 22px;
     }
 
@@ -35,7 +34,6 @@
                 top: 18px;
                 left: 10px;
                 color: rgb(34, 31, 31);
-                text-transform: capitalize;
                 font-size: 13px;
                 transition: top .3s;
                 padding: 0 5px;
