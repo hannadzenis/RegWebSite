@@ -2,4 +2,10 @@
     .registration__title{
         font-size: 15px;
     }
+    .success-message{
+        padding: 50px 20px;
+        &__text{
+            font-size: 10px;
+        }
+    }
 }
